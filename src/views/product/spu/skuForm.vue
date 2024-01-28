@@ -130,7 +130,8 @@ const initSkuData = async (c1Id: number | string, c2Id: number | string, spu: an
 // 设置默认图片回调
 const handler = (row: any) => {
   // 点击的时候，全部的图片复选款不勾选
-  imgArr.value.forEach((item: any) => {
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
+  imgArr.value.forEach((_item: any) => {
     table.value.toggleRowSelection(row, false)
   })
   // 复选框选中图片勾选
