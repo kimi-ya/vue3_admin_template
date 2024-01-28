@@ -1,3 +1,4 @@
+<!-- eslint-disable vue/valid-v-model -->
 <template>
   <div class="login_container">
     <el-row>
@@ -8,10 +9,10 @@
           <h1>Hello</h1>
           <h2>欢迎来到通用运营平台</h2>
           <el-form-item prop="username">
-            <el-input :prefix-icon="User" v-model="loginForm.username"></el-input>
+            <el-input :prefix-icon="User" v-model="loginForm?.username"></el-input>
           </el-form-item>
           <el-form-item prop="password">
-            <el-input :prefix-icon="Lock" type="password" v-model="loginForm.password" show-password></el-input>
+            <el-input :prefix-icon="Lock" type="password" v-model="loginForm?.password" show-password></el-input>
           </el-form-item>
           <el-form-item>
             <el-button :loading="loading" class="login_btn" type="primary" size="default" @click="login">
